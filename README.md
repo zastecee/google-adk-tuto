@@ -61,6 +61,12 @@ gcloud run deploy adk-agent \
   --platform managed \
   --region us-central1 \
   --allow-unauthenticated
+  
+
+
+export GOOGLE_CLOUD_PROJECT=agent-deployment-245
+export GOOGLE_CLOUD_LOCATION=us-central1 # Or your preferred location
+export GOOGLE_GENAI_USE_ENTERPRISE=True
 
 # The deployed service exposes a small HTTP API and Swagger UI at /docs.
 # For the ADK local web UI, run `adk web` on your machine instead of Cloud Run.
